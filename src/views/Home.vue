@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Todos from '../components/Todos'
-import AddTodo from '../components/AddTodo'
+import Todos from '../components/Todos.vue'
+import AddTodo from '../components/AddTodo.vue'
 import axios from 'axios'
 import uuid from 'uuid'
 
