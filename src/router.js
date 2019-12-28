@@ -1,22 +1,23 @@
-import App from './App'
-import About from './components/About'
-// import Vue from 'vue'
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from './views/Home'
+import About from './views/About'
 
-import VueRouter from 'vue-router'
-const routes = [
+Vue.use(Router)
+
+export default new Router(
   {
-    path: '/',
-    component: App
-  },
-  {
-    path: '/about',
-    component: About
+    routes: [
+      {
+        path: '/',
+        name: 'home',
+        component: Home
+      },
+      {
+        path: '/about',
+        name: 'about',
+        component: About
+      }
+    ]
   }
-]
-
-const router = new VueRouter({
-  routes
-})
-
-// const app = new Vue ({ router }).$mount('#app')
-export default router
+)
