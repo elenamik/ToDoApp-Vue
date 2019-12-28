@@ -5,7 +5,6 @@ Source: https://medium.com/@Roli_Dori/deploy-vue-cli-3-project-to-github-pages-e
    1. comment out /dist from .gitignore
    1. ```yarn build```
    1. track build files
-   ```git add dist```
-    ```git commit -m "message here"```
+   ```git add dist && git commit -m "message here"```
    1. push dist files ONLY to gh-pages branch
    ```git subtree push --prefix dist origin gh-pages```
