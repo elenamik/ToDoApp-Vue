@@ -20,22 +20,27 @@ export default {
 }
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
+  @import '../styles/colors.scss';
   .todo-item {
-    background:rgba(230, 230, 218, 0.952);
-    padding: 10px;
+    background:$secondary;
     border-bottom: 1px #ccc dotted;
+    padding: 1% 2% 1% 2%;
   }
   .is-complete {
     text-decoration: line-through;
   }
   .del {
-  background: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 5px 9px;
-  border-radius: 50%;
-  cursor: pointer;
-  float: right;
-}
+    background: $primaryAccent;
+    color: $mainFont;
+    border: none;
+    padding: 3px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    &:hover {
+      background: $contrastAccent;
+    }
+  }
 </style>

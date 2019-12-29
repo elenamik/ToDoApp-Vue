@@ -14,19 +14,21 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import '../../styles/colors.scss';
+  
   .header {
-    background-color: rgb(75, 11, 11);
-    color:rgb(255, 255, 235);
+    background-color: $primary;
+    color: $mainFont;
     padding: 10px;
     text-align: center;
   }
   a {
     text-decoration: none;
-    color:rgb(255, 255, 235);
+    color:$secondaryFont;
   }
   a:hover {
     text-decoration: underline;
-    color:rgb(255, 255, 235);
+    color: $mainFont;
   }
 </style> 

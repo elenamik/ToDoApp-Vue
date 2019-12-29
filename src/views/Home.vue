@@ -11,7 +11,6 @@ import AddTodo from '../components/AddTodo.vue'
 import axios from 'axios'
 import uuid from 'uuid'
 
-
 export default {
   name: 'Home',
   components: {
@@ -55,29 +54,5 @@ export default {
       // eslint-disable-next-line no-console
       .catch( err => console.log(err) )
   }
-  
 }
 </script>
-
-<style>
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-  }
-  .btn {
-    display: inline-block;
-    border:none;
-    background: rgba(75, 11, 11, 0.493);
-    color: white;
-    padding: 7px 20px;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background:rgba(75, 11, 11, 0.767)
-  }
-</style>
