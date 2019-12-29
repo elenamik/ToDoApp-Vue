@@ -6,7 +6,6 @@
     </form>
   </div>
 </template>
-
 <script>
 
 export default {
@@ -30,15 +29,21 @@ export default {
 }
 </script>
 
-<style scoped>
-form {
-  display: flex;
-}
-input[type="text"] {
-  flex: 10;
-  padding: 5px;
-}
-input[type="submit"] {
-  flex: 2;
-}
+<style lang="scss" scoped>
+  @import '../styles/colors.scss';
+  form {
+    display: flex;
+  }
+  input[type="text"] {
+    flex: 10;
+    padding: 5px;
+  }
+  input[type="submit"] {
+    flex: 2;
+  }
+  .btn {
+    &:hover{ 
+      background: $contrastAccent;
+    }
+  }
 </style>
