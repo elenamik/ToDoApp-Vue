@@ -1,5 +1,6 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -31,6 +32,7 @@ module.exports = {
     new HTMLWebpackPlugin({
       title: 'To Do App',
       template: './public/index.html'
-    })
+    }),
+    new CleanWebpackPlugin()
   ]
 }
